@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(38, 202, 243);
+}
+// 標題
+div {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(162, 235, 235);
+}
+
+h1 {
+  margin: 1.5rem;
+  color: rgb(57, 167, 211);
+}
+
+// 遊戲部分
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100px;
+  margin: 10px 300px;
+  background-color: rgb(38, 202, 243);
+}
+
+.card {
+  height: 120px;
+  width: 120px;
+  margin: 30px;
+  position: relative;
+  transition: transform .5s;
+}
+
+.backSide {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  background: #c2e5e0;
+  backface-visibility: hidden;
+  z-index: 1;
+  transform: rotateY(0deg);
+  // transition: transform .5s;
+}
+
+.frontSide {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+
+  transform: rotateY(-180deg);
+  // transition: transform .5s;
+}
+.pick {
+  // transition: transform .5s;
+  transform: rotateY(180deg);
+}
