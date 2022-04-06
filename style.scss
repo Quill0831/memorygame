@@ -45,7 +45,7 @@ section {
   backface-visibility: hidden;
   z-index: 1;
   transform: rotateY(0deg);
-  // transition: transform .5s;
+
 }
 
 .frontSide {
@@ -54,9 +54,9 @@ section {
   position: absolute;
 
   transform: rotateY(-180deg);
-  // transition: transform .5s;
+ 
 }
 .pick {
-  // transition: transform .5s;
+
   transform: rotateY(180deg);
 }
