@@ -6,11 +6,14 @@
 
 body{
   background-color: rgb(38, 202, 243);
+
+ 
 }
 // 標題
 div {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: rgb(162, 235, 235);
 }
 
@@ -22,11 +25,15 @@ h1 {
 // 遊戲部分
 
 section {
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 100px;
-  margin: 10px 300px;
+  margin: auto;
+  flex: 1 1 200px;
+ 
   background-color: rgb(38, 202, 243);
+  
 }
 
 .card {
@@ -35,6 +42,8 @@ section {
   margin: 30px;
   position: relative;
   transition: transform .5s;
+  cursor: pointer;
+  transform-style: preserve-3d;
 }
 
 .backSide {
@@ -43,8 +52,10 @@ section {
   position: absolute;
   background: #c2e5e0;
   backface-visibility: hidden;
-  z-index: 1;
   transform: rotateY(0deg);
+  
+  // z-index: 1;
+
   // transition: transform .5s;
 }
 
@@ -52,7 +63,7 @@ section {
   height: 120px;
   width: 120px;
   position: absolute;
-
+  // backface-visibility: hidden;
   transform: rotateY(-180deg);
   // transition: transform .5s;
 }

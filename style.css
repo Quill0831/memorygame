@@ -16,6 +16,9 @@ div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #a2ebeb;
 }
 
@@ -25,15 +28,17 @@ h1 {
 }
 
 section {
+  width: 600px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: auto;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100px;
-          flex: 1 1 100px;
-  margin: 10px 300px;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
   background-color: #26caf3;
 }
 
@@ -46,6 +51,9 @@ section {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .backSide {
@@ -55,7 +63,6 @@ section {
   background: #c2e5e0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  z-index: 1;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }
