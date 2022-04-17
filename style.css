@@ -28,8 +28,8 @@ h1 {
 }
 
 section {
-  width: 600px;
-  height: 600px;
+  width: 640px;
+  height: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,9 +43,9 @@ section {
 }
 
 .card {
-  height: 120px;
-  width: 120px;
-  margin: 30px;
+  height: 100px;
+  width: 100px;
+  margin: 10px 30px;
   position: relative;
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
@@ -54,11 +54,12 @@ section {
   cursor: pointer;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  border-radius: 10%;
 }
 
 .backSide {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   background: #c2e5e0;
   -webkit-backface-visibility: hidden;
@@ -66,6 +67,7 @@ section {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   z-index: 1;
+  border-radius: 10%;
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
@@ -73,9 +75,10 @@ section {
 }
 
 .frontSide {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   position: absolute;
+  border-radius: 10%;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
